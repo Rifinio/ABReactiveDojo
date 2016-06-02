@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE99E8A5BEC147CCBFF62CE8 /* libPods-ABReactiveDojo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE8DFDBF3EAE563FBF6C38C /* libPods-ABReactiveDojo.a */; };
 		CD6FE7B81D0099DF002D8037 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7B71D0099DF002D8037 /* main.m */; };
 		CD6FE7BB1D0099DF002D8037 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7BA1D0099DF002D8037 /* AppDelegate.m */; };
 		CD6FE7BE1D0099DF002D8037 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7BD1D0099DF002D8037 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		344FA86DB0A7D10FD9A5878F /* Pods-ABReactiveDojo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABReactiveDojo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABReactiveDojo/Pods-ABReactiveDojo.release.xcconfig"; sourceTree = "<group>"; };
+		5BE8DFDBF3EAE563FBF6C38C /* libPods-ABReactiveDojo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABReactiveDojo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEC7C62B3C14672AD30B309 /* Pods-ABReactiveDojo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABReactiveDojo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABReactiveDojo/Pods-ABReactiveDojo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6FE7B31D0099DF002D8037 /* ABReactiveDojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABReactiveDojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6FE7B71D0099DF002D8037 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD6FE7B91D0099DF002D8037 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE99E8A5BEC147CCBFF62CE8 /* libPods-ABReactiveDojo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A92C1CCAC726F2E0E946C492 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BE8DFDBF3EAE563FBF6C38C /* libPods-ABReactiveDojo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6087BFE2D1A6A4C86962BFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FEC7C62B3C14672AD30B309 /* Pods-ABReactiveDojo.debug.xcconfig */,
+				344FA86DB0A7D10FD9A5878F /* Pods-ABReactiveDojo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD6FE7AA1D0099DF002D8037 = {
 			isa = PBXGroup;
 			children = (
 				CD6FE7B51D0099DF002D8037 /* ABReactiveDojo */,
 				CD6FE7B41D0099DF002D8037 /* Products */,
+				B6087BFE2D1A6A4C86962BFE /* Pods */,
+				A92C1CCAC726F2E0E946C492 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD6FE7CA1D0099DF002D8037 /* Build configuration list for PBXNativeTarget "ABReactiveDojo" */;
 			buildPhases = (
+				DF19ED7991B4AC212D19C367 /* Check Pods Manifest.lock */,
 				CD6FE7AF1D0099DF002D8037 /* Sources */,
 				CD6FE7B01D0099DF002D8037 /* Frameworks */,
 				CD6FE7B11D0099DF002D8037 /* Resources */,
+				4E721A00FF2852484D534D3B /* Embed Pods Frameworks */,
+				B4623C445EAF9B8FE236EECD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E721A00FF2852484D534D3B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABReactiveDojo/Pods-ABReactiveDojo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4623C445EAF9B8FE236EECD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABReactiveDojo/Pods-ABReactiveDojo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF19ED7991B4AC212D19C367 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD6FE7AF1D0099DF002D8037 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		CD6FE7CB1D0099DF002D8037 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FEC7C62B3C14672AD30B309 /* Pods-ABReactiveDojo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ABReactiveDojo/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		CD6FE7CC1D0099DF002D8037 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 344FA86DB0A7D10FD9A5878F /* Pods-ABReactiveDojo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ABReactiveDojo/Info.plist;
@@ -298,6 +375,7 @@
 				CD6FE7CC1D0099DF002D8037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
