@@ -14,6 +14,9 @@
 		CD6FE7C11D0099DF002D8037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6FE7BF1D0099DF002D8037 /* Main.storyboard */; };
 		CD6FE7C31D0099DF002D8037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6FE7C21D0099DF002D8037 /* Assets.xcassets */; };
 		CD6FE7C61D0099DF002D8037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6FE7C41D0099DF002D8037 /* LaunchScreen.storyboard */; };
+		CD6FE7D11D018970002D8037 /* TextFieldReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7CF1D018970002D8037 /* TextFieldReactiveViewController.m */; };
+		CD6FE7D21D018971002D8037 /* TextFieldReactiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6FE7D01D018970002D8037 /* TextFieldReactiveViewController.xib */; };
+		CD6FE7D51D018A32002D8037 /* ABReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7D41D018A32002D8037 /* ABReactiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,11 @@
 		CD6FE7C21D0099DF002D8037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6FE7C51D0099DF002D8037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD6FE7C71D0099DF002D8037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6FE7CE1D018970002D8037 /* TextFieldReactiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldReactiveViewController.h; sourceTree = "<group>"; };
+		CD6FE7CF1D018970002D8037 /* TextFieldReactiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldReactiveViewController.m; sourceTree = "<group>"; };
+		CD6FE7D01D018970002D8037 /* TextFieldReactiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldReactiveViewController.xib; sourceTree = "<group>"; };
+		CD6FE7D31D018A32002D8037 /* ABReactiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABReactiveViewController.h; sourceTree = "<group>"; };
+		CD6FE7D41D018A32002D8037 /* ABReactiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABReactiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +92,7 @@
 			children = (
 				CD6FE7B91D0099DF002D8037 /* AppDelegate.h */,
 				CD6FE7BA1D0099DF002D8037 /* AppDelegate.m */,
-				CD6FE7BC1D0099DF002D8037 /* ViewController.h */,
-				CD6FE7BD1D0099DF002D8037 /* ViewController.m */,
+				CD6FE7CD1D00A38E002D8037 /* Controllers */,
 				CD6FE7BF1D0099DF002D8037 /* Main.storyboard */,
 				CD6FE7C21D0099DF002D8037 /* Assets.xcassets */,
 				CD6FE7C41D0099DF002D8037 /* LaunchScreen.storyboard */,
@@ -101,6 +108,20 @@
 				CD6FE7B71D0099DF002D8037 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD6FE7CD1D00A38E002D8037 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD6FE7D31D018A32002D8037 /* ABReactiveViewController.h */,
+				CD6FE7D41D018A32002D8037 /* ABReactiveViewController.m */,
+				CD6FE7BC1D0099DF002D8037 /* ViewController.h */,
+				CD6FE7BD1D0099DF002D8037 /* ViewController.m */,
+				CD6FE7CE1D018970002D8037 /* TextFieldReactiveViewController.h */,
+				CD6FE7CF1D018970002D8037 /* TextFieldReactiveViewController.m */,
+				CD6FE7D01D018970002D8037 /* TextFieldReactiveViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +187,7 @@
 				CD6FE7C61D0099DF002D8037 /* LaunchScreen.storyboard in Resources */,
 				CD6FE7C31D0099DF002D8037 /* Assets.xcassets in Resources */,
 				CD6FE7C11D0099DF002D8037 /* Main.storyboard in Resources */,
+				CD6FE7D21D018971002D8037 /* TextFieldReactiveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6FE7BE1D0099DF002D8037 /* ViewController.m in Sources */,
+				CD6FE7D51D018A32002D8037 /* ABReactiveViewController.m in Sources */,
+				CD6FE7D11D018970002D8037 /* TextFieldReactiveViewController.m in Sources */,
 				CD6FE7BB1D0099DF002D8037 /* AppDelegate.m in Sources */,
 				CD6FE7B81D0099DF002D8037 /* main.m in Sources */,
 			);

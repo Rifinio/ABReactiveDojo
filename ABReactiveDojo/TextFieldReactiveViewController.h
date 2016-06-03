@@ -1,16 +1,14 @@
 //
-//  ViewController.h
+//  TextFieldReactiveViewController.h
 //  ABReactiveDojo
 //
-//  Created by Adil BOUGAMZA on 02/06/2016.
+//  Created by Adil BOUGAMZA on 03/06/2016.
 //  Copyright © 2016 Adil Bougamza. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "ABReactiveViewController.h"
 
-@interface ViewController : ABReactiveViewController
-
+@interface TextFieldReactiveViewController : ABReactiveViewController
 
 @end
-
