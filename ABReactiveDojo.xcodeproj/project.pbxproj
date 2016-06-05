@@ -17,6 +17,8 @@
 		CD6FE7D11D018970002D8037 /* TextFieldReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7CF1D018970002D8037 /* TextFieldReactiveViewController.m */; };
 		CD6FE7D21D018971002D8037 /* TextFieldReactiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6FE7D01D018970002D8037 /* TextFieldReactiveViewController.xib */; };
 		CD6FE7D51D018A32002D8037 /* ABReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7D41D018A32002D8037 /* ABReactiveViewController.m */; };
+		CD6FE7D91D0448F8002D8037 /* DatePickerReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7D71D0448F8002D8037 /* DatePickerReactiveViewController.m */; };
+		CD6FE7DA1D0448F8002D8037 /* DatePickerReactiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6FE7D81D0448F8002D8037 /* DatePickerReactiveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		CD6FE7D01D018970002D8037 /* TextFieldReactiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldReactiveViewController.xib; sourceTree = "<group>"; };
 		CD6FE7D31D018A32002D8037 /* ABReactiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABReactiveViewController.h; sourceTree = "<group>"; };
 		CD6FE7D41D018A32002D8037 /* ABReactiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABReactiveViewController.m; sourceTree = "<group>"; };
+		CD6FE7D61D0448F8002D8037 /* DatePickerReactiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerReactiveViewController.h; sourceTree = "<group>"; };
+		CD6FE7D71D0448F8002D8037 /* DatePickerReactiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerReactiveViewController.m; sourceTree = "<group>"; };
+		CD6FE7D81D0448F8002D8037 /* DatePickerReactiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerReactiveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +122,30 @@
 				CD6FE7D41D018A32002D8037 /* ABReactiveViewController.m */,
 				CD6FE7BC1D0099DF002D8037 /* ViewController.h */,
 				CD6FE7BD1D0099DF002D8037 /* ViewController.m */,
+				CD6FE7DB1D044903002D8037 /* TextField */,
+				CD6FE7DC1D04490C002D8037 /* DatePicker */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CD6FE7DB1D044903002D8037 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
 				CD6FE7CE1D018970002D8037 /* TextFieldReactiveViewController.h */,
 				CD6FE7CF1D018970002D8037 /* TextFieldReactiveViewController.m */,
 				CD6FE7D01D018970002D8037 /* TextFieldReactiveViewController.xib */,
 			);
-			name = Controllers;
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		CD6FE7DC1D04490C002D8037 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CD6FE7D61D0448F8002D8037 /* DatePickerReactiveViewController.h */,
+				CD6FE7D71D0448F8002D8037 /* DatePickerReactiveViewController.m */,
+				CD6FE7D81D0448F8002D8037 /* DatePickerReactiveViewController.xib */,
+			);
+			name = DatePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6FE7DA1D0448F8002D8037 /* DatePickerReactiveViewController.xib in Resources */,
 				CD6FE7C61D0099DF002D8037 /* LaunchScreen.storyboard in Resources */,
 				CD6FE7C31D0099DF002D8037 /* Assets.xcassets in Resources */,
 				CD6FE7C11D0099DF002D8037 /* Main.storyboard in Resources */,
@@ -251,6 +276,7 @@
 				CD6FE7D11D018970002D8037 /* TextFieldReactiveViewController.m in Sources */,
 				CD6FE7BB1D0099DF002D8037 /* AppDelegate.m in Sources */,
 				CD6FE7B81D0099DF002D8037 /* main.m in Sources */,
+				CD6FE7D91D0448F8002D8037 /* DatePickerReactiveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

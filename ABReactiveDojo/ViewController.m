@@ -21,7 +21,7 @@
 
     self.title = @"UI Objects";
 
-    _objectsArray = [[NSArray alloc] initWithObjects:@"TextField",@"slider", nil];
+    _objectsArray = [[NSArray alloc] initWithObjects:@"TextField",@"DatePicker", nil];
 }
 
 - (void)didReceiveMemoryWarning {
