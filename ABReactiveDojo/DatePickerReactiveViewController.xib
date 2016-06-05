@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="datePicker" destination="Dug-KZ-QqR" id="0PF-Lv-jcP"/>
                 <outlet property="label" destination="mAp-vy-eQ2" id="GO9-7j-jHL"/>
+                <outlet property="labelCounter" destination="o7Z-gH-gI2" id="VuY-M4-zKn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,15 +18,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAp-vy-eQ2">
-                    <rect key="frame" x="8" y="310" width="304" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="Mbj-Tx-LZx"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-KZ-QqR">
                     <rect key="frame" x="0.0" y="70" width="320" height="216"/>
                     <constraints>
@@ -35,14 +27,46 @@
                         <!--2016-06-05 11:48:52 +0000-->
                     </date>
                 </datePicker>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAp-vy-eQ2">
+                    <rect key="frame" x="8" y="310" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Mbj-Tx-LZx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Counter :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l5-KD-rE8">
+                    <rect key="frame" x="14" y="374" width="95" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Ldi-QO-QFb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7Z-gH-gI2">
+                    <rect key="frame" x="117" y="374" width="195" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="PkK-X7-jeX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="o7Z-gH-gI2" secondAttribute="trailing" constant="8" id="7Ae-2W-TLd"/>
+                <constraint firstItem="4l5-KD-rE8" firstAttribute="top" secondItem="mAp-vy-eQ2" secondAttribute="bottom" constant="43" id="7pr-ma-kfm"/>
                 <constraint firstAttribute="trailing" secondItem="Dug-KZ-QqR" secondAttribute="trailing" id="EQV-96-xUu"/>
                 <constraint firstItem="mAp-vy-eQ2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ICz-gx-vqs"/>
+                <constraint firstItem="o7Z-gH-gI2" firstAttribute="top" secondItem="mAp-vy-eQ2" secondAttribute="bottom" constant="43" id="PjU-Mo-Mka"/>
                 <constraint firstItem="mAp-vy-eQ2" firstAttribute="top" secondItem="Dug-KZ-QqR" secondAttribute="bottom" constant="24" id="Re1-kl-jJj"/>
+                <constraint firstItem="4l5-KD-rE8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="XoA-NI-FMW"/>
                 <constraint firstAttribute="trailing" secondItem="mAp-vy-eQ2" secondAttribute="trailing" constant="8" id="Z4f-jc-Fau"/>
                 <constraint firstItem="Dug-KZ-QqR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cdP-Zs-3NR"/>
+                <constraint firstItem="o7Z-gH-gI2" firstAttribute="leading" secondItem="4l5-KD-rE8" secondAttribute="trailing" constant="8" id="hLa-I9-uan"/>
                 <constraint firstItem="Dug-KZ-QqR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="qrw-4I-n00"/>
             </constraints>
             <point key="canvasLocation" x="286" y="388"/>

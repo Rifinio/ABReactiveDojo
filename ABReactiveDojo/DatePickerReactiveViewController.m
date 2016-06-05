@@ -7,11 +7,13 @@
 //
 
 #import "DatePickerReactiveViewController.h"
+#import "NSDate+Additions.h"
 
 @interface DatePickerReactiveViewController ()
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *labelCounter;
 
 @end
 
@@ -31,6 +33,26 @@
         // format the date selected
         return [self formattedStringFromDate:date];
     }] startWith:[self formattedStringFromDate:[NSDate date]]];
+
+    // Create a signal that sends values (dates) each second
+    RACSignal *secondsSignal = [[[RACSignal interval:1.0
+                                       onScheduler:[RACScheduler mainThreadScheduler]]
+                                doNext:^(id x) {
+                                    NSLog(@"seconds signal value :%@",x);
+                                }] replayLast];
+
+    // we get the seconds signal and format it to show the seconds
+    RAC(self.labelCounter, text) = [[secondsSignal map:^id(NSDate *date) {
+        return [date seconds];
+        // StartWith will give a starting value when the view just shows
+    }] startWith:[[NSDate date] seconds]];
+
+
+    // Depending on the number of seconds if it's Odd or Even
+    // we change the background color
+    RAC(self.view, backgroundColor) = [[secondsSignal map:^id(NSDate *date) {
+        return [self getColorFromSeconds:date];
+    }] startWith:[self getColorFromSeconds:[NSDate date]]];
 }
 
 - (NSString *) formattedStringFromDate:(NSDate *) date
@@ -40,10 +62,16 @@
     return [dateFormatter stringFromDate:date];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (UIColor *) getColorFromSeconds:(NSDate *) date
+{
+    NSInteger seconds = [[date seconds] integerValue];
 
+    if (seconds%2)  {
+        return [UIColor orangeColor];
+    }
+    else {
+        return [UIColor cyanColor];
+    }
+}
 
 @end

@@ -19,6 +19,7 @@
 		CD6FE7D51D018A32002D8037 /* ABReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7D41D018A32002D8037 /* ABReactiveViewController.m */; };
 		CD6FE7D91D0448F8002D8037 /* DatePickerReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7D71D0448F8002D8037 /* DatePickerReactiveViewController.m */; };
 		CD6FE7DA1D0448F8002D8037 /* DatePickerReactiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6FE7D81D0448F8002D8037 /* DatePickerReactiveViewController.xib */; };
+		CD6FE7E01D045304002D8037 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6FE7DF1D045304002D8037 /* NSDate+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		CD6FE7D61D0448F8002D8037 /* DatePickerReactiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerReactiveViewController.h; sourceTree = "<group>"; };
 		CD6FE7D71D0448F8002D8037 /* DatePickerReactiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerReactiveViewController.m; sourceTree = "<group>"; };
 		CD6FE7D81D0448F8002D8037 /* DatePickerReactiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerReactiveViewController.xib; sourceTree = "<group>"; };
+		CD6FE7DE1D045304002D8037 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		CD6FE7DF1D045304002D8037 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		CD6FE7B51D0099DF002D8037 /* ABReactiveDojo */ = {
 			isa = PBXGroup;
 			children = (
+				CD6FE7DD1D0452C6002D8037 /* Categories */,
 				CD6FE7B91D0099DF002D8037 /* AppDelegate.h */,
 				CD6FE7BA1D0099DF002D8037 /* AppDelegate.m */,
 				CD6FE7CD1D00A38E002D8037 /* Controllers */,
@@ -146,6 +150,15 @@
 				CD6FE7D81D0448F8002D8037 /* DatePickerReactiveViewController.xib */,
 			);
 			name = DatePicker;
+			sourceTree = "<group>";
+		};
+		CD6FE7DD1D0452C6002D8037 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CD6FE7DE1D045304002D8037 /* NSDate+Additions.h */,
+				CD6FE7DF1D045304002D8037 /* NSDate+Additions.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,7 @@
 				CD6FE7D51D018A32002D8037 /* ABReactiveViewController.m in Sources */,
 				CD6FE7D11D018970002D8037 /* TextFieldReactiveViewController.m in Sources */,
 				CD6FE7BB1D0099DF002D8037 /* AppDelegate.m in Sources */,
+				CD6FE7E01D045304002D8037 /* NSDate+Additions.m in Sources */,
 				CD6FE7B81D0099DF002D8037 /* main.m in Sources */,
 				CD6FE7D91D0448F8002D8037 /* DatePickerReactiveViewController.m in Sources */,
 			);
